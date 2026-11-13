@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Generated test output (keep authored Markdown reports)
+reports/allure-*/
+reports/*.json
+reports/
+.artifact-work/
+20??-??-??/
+allure-results*/
+allure-report*/
+allure_results*/
+allure_report*/
+logs/
+*.log
+
+# Build output
+build/
+dist/
+*.egg-info/
+
+# IDE and local tools
+.idea/
+.vscode/
+.claude/
+.codex-temp/
+
+# Local configuration and temporary files
+.env
+.env.*
+!.env.example
+tests/e2e/config/test_env.ini
+sessionmanager_py/examples/*.json
+!sessionmanager_py/examples/*.example.json
+sessionmanager_py/.git/
+*.tmp
+*.bak
+*.bak_*
+*.backup_*
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

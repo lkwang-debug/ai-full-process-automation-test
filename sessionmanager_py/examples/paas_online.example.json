@@ -1,0 +1,14 @@
+{
+  "_说明": "自动获取的真实 PaaS 配置；包含用户 token，请勿随通用 SDK 分发。",
+  "_server": "127.0.0.1",
+  "cp_address": "TCP:127.0.0.1:1089;TCP:127.0.0.1:28101;",
+  "app_id": "",
+  "token": "",
+  "user_id": "1000000008",
+  "client_guid": "",
+  "protocol_version": "1.0.0",
+  "mutex_type": "1",
+  "os_type": "macOS",
+  "registered_user": 1,
+  "force_login": 0
+}

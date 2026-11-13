@@ -1,0 +1,5 @@
+# Preserve protocol, SDK and workbook fingerprints exactly.
+*.xml -text
+*.html -text
+hst-rtc-sdk-*.js -text
+*.xlsx binary

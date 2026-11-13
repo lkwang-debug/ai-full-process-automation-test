@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><title>Web SDK协议测试Demo</title>
+<style>body{font:15px system-ui;margin:24px;color:#172033}input,select,button{padding:7px;margin:4px}pre{white-space:pre-wrap;background:#eef2f6;padding:12px;max-height:380px;overflow:auto}label{display:block}fieldset{margin:14px 0}button{cursor:pointer}</style></head>
+<body><h1>Web SDK协议测试Demo</h1>
+<p>调用真实SDK公开接口。消息验收以Python采集的真实网络帧为准；此页本地事件仅供辅助诊断。</p>
+<fieldset><legend>登录配置</legend><label>Web入口 <input id="ces" size="45" placeholder="填写当前CES入口；自动化从INI读取"></label>
+<label>入会身份 <select id="identity-type"><option value="account">账号用户</option><option value="guest">游客</option></select>（游客不需要账号密码，账号栏用作游客显示名）</label>
+<label>账号 <input id="username" autocomplete="username"> 密码 <input id="password" type="password" autocomplete="current-password"></label>
+<label>会议ID <input id="room" type="number"></label><button id="join">初始化并入会</button></fieldset>
+<fieldset><legend>公开业务操作</legend><select id="operation"><option>get_identity</option><option>get_devices</option><option>mic_on</option><option>mic_off</option><option>camera_on</option><option>camera_off</option><option>chat</option><option>request_presenter</option><option>release_presenter</option><option>request_manager</option><option>release_manager</option><option>start_record</option><option>stop_record</option><option>start_screen_share</option><option>stop_screen_share</option><option>start_whiteboard</option><option>stop_whiteboard</option><option>leave</option></select>
+<label>参数JSON <input id="params" size="75" value="{}"></label><button id="invoke">执行</button></fieldset>
+<h2>调用与SDK事件（非服务器Response）</h2><pre id="log"></pre>
+<button id="capture-trigger" style="position:fixed;right:16px;bottom:16px">自动化共享入口</button>
+<script type="module" src="/app.js"></script></body></html>

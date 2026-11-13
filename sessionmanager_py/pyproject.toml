@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "framecore-session"
+version = "0.1.0"
+description = "Python framecore reliable-session protocol and 4u fm client"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+aes = ["pycryptodome"]
+sm4 = ["gmssl"]
+
+[tool.setuptools.packages.find]
+include = ["framecore_session*", "fm_client*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

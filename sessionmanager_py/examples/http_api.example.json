@@ -1,0 +1,9 @@
+{
+  "_说明": "4u Web 后台 HTTP API 配置（建会/取消/邀请/布局锁定等信令外接口）。base_url = 4u 部署地址 + /api；app_key/app_secret 由运维分配（鉴权用，生成 JWT token）。verify_tls:false 用于自签证书的测试环境。可单独用，也可整体作为 multi_client.json 的 'http' 子节。",
+  "base_url": "http://127.0.0.1:28080/api",
+  "app_key": "",
+  "app_secret": "",
+  "timeout": 10,
+  "verify_tls": false,
+  "success_code": 0
+}

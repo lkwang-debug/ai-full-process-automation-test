@@ -1,0 +1,26 @@
+{
+  "_说明": "多账号多端测试配置。host/port/room_id 必填，其余可选。conf_protocol_version 只控制 Conf(app=11)，2.0 可启用大会议操作权协议。initialization_wait 是双端入会后等待服务器初始化消息完成的秒数。case_params 是真机协议参数，命令行 --params 可覆盖。accounts 里每个账号 = 一个模拟端身份（操作端用第 0 个，观察端用第 1 个）。账号密码请改成你环境里真实的。",
+  "host": "127.0.0.1",
+  "port": 1089,
+  "room_id": 10000,
+  "room_node_id": "396593",
+  "room_app_id": 11,
+  "request_timeout": 8,
+  "conf_protocol_version": "2.0",
+  "initialization_wait": 2,
+  "case_params": {
+    "sys_msg_id": 6,
+    "audio_share_id": 1,
+    "video_share_id": 1
+  },
+  "accounts": [
+    {
+      "username": "test-user",
+      "password": ""
+    },
+    {
+      "username": "test-user",
+      "password": ""
+    }
+  ]
+}

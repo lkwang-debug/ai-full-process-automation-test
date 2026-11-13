@@ -1,0 +1,16 @@
+[
+  {"id":"WEB-FLOW-LOGIN","name":"登录、成员信息和主动退出","scenario":"login","priority":"P0","combinations":["fm->web","web->fm","web->web"]},
+  {"id":"WEB-FLOW-CHAT","name":"群聊中文与特殊字符真实投递","scenario":"chat","priority":"P0","combinations":["fm->web","web->fm","web->web"],"params":{"text":"Web关键流程中文<&>"}},
+  {"id":"WEB-FLOW-SELF-AV","name":"本人音视频开启、关闭和恢复","scenario":"self_av","priority":"P0","combinations":["fm->web","web->fm","web->web"],"variants":[{"kind":"audio"},{"kind":"video"}]},
+  {"id":"WEB-FLOW-MUTE","name":"FM全体静音后Web音频关闭","scenario":"mute","priority":"P0","combinations":["fm->web"]},
+  {"id":"WEB-FLOW-ROLE","name":"Web主持或管理员申请与放弃","scenario":"role","priority":"P1","combinations":["web->fm","web->web"],"variants":[{"role":"presenter"},{"role":"manager"}]},
+  {"id":"WEB-FLOW-INFO","name":"Web查看本人和其他成员用户名及昵称","scenario":"info","priority":"P1","combinations":["web->fm","web->web"]},
+  {"id":"WEB-FLOW-CONSENT","name":"远程音视频请求、接受或拒绝","scenario":"remote","priority":"P1","combinations":["fm->web","web->fm","web->web"],"variants":[{"kind":"audio","accept":true},{"kind":"audio","accept":false},{"kind":"video","accept":true},{"kind":"video","accept":false}]},
+  {"id":"WEB-FLOW-DIRECT","name":"会控会议无需确认直接开启目标音视频","scenario":"direct","priority":"P1","combinations":["fm->web","web->fm","web->web"],"variants":[{"kind":"audio"},{"kind":"video"}]},
+  {"id":"WEB-FLOW-SCREEN","name":"Web桌面共享开始、广播和停止","scenario":"screen","priority":"P1","combinations":["web->fm","web->web"]},
+  {"id":"WEB-FLOW-BOARD","name":"Web白板创建、广播与资源关闭","scenario":"whiteboard","priority":"P1","combinations":["web->fm","web->web"]},
+  {"id":"WEB-FLOW-RECORD","name":"Web云录制启停及普通成员权限限制","scenario":"record","priority":"P1","combinations":["web->fm","web->web"],"variants":[{"role":"presenter"},{"role":"manager"},{"role":"attendee"}]},
+  {"id":"WEB-FLOW-LOCK","name":"FM锁会后Web收到等待或拒绝证据","scenario":"lock","priority":"P1","combinations":["fm->web"]},
+  {"id":"WEB-FLOW-KICK","name":"FM请出Web并验证真实离会","scenario":"kick","priority":"P1","combinations":["fm->web"]},
+  {"id":"WEB-FLOW-CLOSE","name":"FM关会后Web收到通知并退出","scenario":"close","priority":"P1","combinations":["fm->web"]}
+]

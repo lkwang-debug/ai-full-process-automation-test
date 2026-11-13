@@ -1,0 +1,8 @@
+{
+  "_说明": "7.154 本部署 PaaS 服务认证配置；供一键生成测试账号的在线配置。包含服务凭据，不要提交或随通用 SDK 分发。",
+  "client_id": "",
+  "client_secret": "",
+  "config_center_key": "",
+  "config_center_version": "03.15.02.03",
+  "protocol_version": "1.0.0"
+}
